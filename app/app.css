@@ -1,6 +1,6 @@
 /* app css stylesheet */
 
-.menu {
+/* .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
@@ -22,4 +22,17 @@
 .menu > li + li:before {
   content: "|";
   padding-right: 0.3em;
+} */
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+sudoku .el {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
 }

@@ -1,0 +1,6 @@
+
+<div ng-repeat="row in data" class="clearfix">
+    <input ng-repeat="unused in row track by $index" class="el" ng-model="row[$index].digit">
+</div>
+
+<pre>{{data}}</pre>

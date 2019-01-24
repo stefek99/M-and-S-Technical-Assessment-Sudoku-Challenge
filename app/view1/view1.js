@@ -9,7 +9,7 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.sudoku'])
   });
 }])
 
-.controller('View1Ctrl', ["sudoku", function(sudoku) {
+.controller('View1Ctrl', ["sudoku", "helpers", function(sudoku, helpers) {
   let ctrl = this;
-  ctrl.sudoku = sudoku.getRandom();
+  ctrl.sudoku = helpers.formatData(sudoku.getRandom());
 }]);
