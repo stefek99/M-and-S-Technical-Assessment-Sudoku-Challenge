@@ -1,3 +1,11 @@
+1. I've learnt that the sudoku must have only one solution
+2. How to generate: https://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions
+3. What is backtracking: https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#Backtracking
+4. Realising that I do not have to generate a new sudoku...
+5. ...it is sufficient to have a single, pre
+6. I
+
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
