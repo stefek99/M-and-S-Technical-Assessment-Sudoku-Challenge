@@ -1,9 +1,6 @@
-
-<div ng-repeat="row in data" class="clearfix">
+<div ng-repeat="row in data" class="row clearfix">
     <input type="number" step="1" min="1" max="9" ng-repeat="unused in row track by $index" class="el" 
            ng-model="row[$index].digit" 
            ng-keydown="sudokuCtrl.trim(row[$index], $event)"
            ng-change="sudokuCtrl.check()">
 </div>
-
-<pre>{{data}}</pre>

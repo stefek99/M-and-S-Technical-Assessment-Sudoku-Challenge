@@ -11,13 +11,20 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.sudoku'])
 
 .controller('View1Ctrl', ["sudoku", "helpers", function(sudoku, helpers) {
   let ctrl = this;
-  ctrl.sudoku = helpers.formatData(sudoku.getRandom());
+  
+  ctrl.easy = () => {
+    ctrl.sudoku = helpers.formatData(sudoku.getEasy());
+  }
+
+  ctrl.normal = () => {
+    ctrl.sudoku = helpers.formatData(sudoku.getNormal());
+  }
 
   ctrl.check = () => {
     if(sudoku.check(ctrl.sudoku)) {
-      alert("solved");
-    } else {
-      console.log("not solved yet");
+      alert("solved"); // TODO: make winning more exciting
     }
   }
+
+  ctrl.normal();
 }]);

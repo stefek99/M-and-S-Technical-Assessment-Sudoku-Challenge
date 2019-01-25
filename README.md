@@ -1,12 +1,22 @@
-1. I've learnt that the sudoku must have only one solution
+
+# Quickstart
+Get the code: `git clone` and `npm install`
+Run: `npm start`
+Test: `npm test`
+
+Code structure based on https://github.com/angular/angular-seed
+
+# TODO
+* (maybe) Highlighting an area violating contraints?
+* Generate a new sudoku
+
+1. Valid udoku must have only one solution
 2. How to generate: https://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions
 3. What is backtracking: https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#Backtracking
-4. Realising that I do not have to generate a new sudoku...
-5. ...it is sufficient to have a single, predefined one
+4. Realising that for MVP, generating a new sudoku is not in the spec
 
-TODO:
-Build an API!
-Build controls to start a new game, restart (clear the field)
+
+-------
 
 
 # `angular-seed` — the seed for AngularJS apps
