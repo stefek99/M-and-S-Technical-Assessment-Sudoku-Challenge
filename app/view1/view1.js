@@ -14,6 +14,10 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.sudoku'])
   ctrl.sudoku = helpers.formatData(sudoku.getRandom());
 
   ctrl.check = () => {
-    console.log("checking");
+    if(sudoku.check(ctrl.sudoku)) {
+      alert("solved");
+    } else {
+      console.log("not solved yet");
+    }
   }
 }]);
