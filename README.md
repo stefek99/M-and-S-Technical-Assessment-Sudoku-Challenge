@@ -2,8 +2,11 @@
 2. How to generate: https://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions
 3. What is backtracking: https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#Backtracking
 4. Realising that I do not have to generate a new sudoku...
-5. ...it is sufficient to have a single, pre
-6. I
+5. ...it is sufficient to have a single, predefined one
+
+TODO:
+Build an API!
+Build controls to start a new game, restart (clear the field)
 
 
 # `angular-seed` — the seed for AngularJS apps

@@ -6,15 +6,15 @@ angular.module('myApp.sudoku', [])
     service.getRandom = () => {
       // TODO... :)
       return [
-        [5,3,0,0,7,0,0,0,0],
-        [6,0,0,1,9,5,0,0,0],
-        [0,9,8,0,0,0,0,6,0],
-        [8,0,0,0,6,0,0,0,3],
-        [4,0,0,8,0,3,0,0,1],
-        [7,0,0,0,2,0,0,0,6],
-        [0,6,0,0,0,0,2,8,0],
-        [0,0,0,4,1,9,0,0,5],
-        [0,0,0,0,8,0,0,7,9]
+        [5,3, , ,7, , , , ,],
+        [6, , ,1,9,5, , , ,],
+        [ ,9,8, , , , ,6, ,],
+        [8, , , ,6, , , ,3],
+        [4, , ,8, ,3, , ,1],
+        [7, , , ,2, , , ,6],
+        [ ,6, , , , ,2,8, ,],
+        [ , , ,4,1,9, , ,5],
+        [ , , , ,8, , ,7,9]
       ];
     }
 
@@ -35,6 +35,7 @@ angular.module('myApp.sudoku', [])
       let formatted = [];
 
       sudoku.forEach((row) => {
+
         formatted.push(row.map((el) => { return { digit: el }}));
       });
 
@@ -51,6 +52,26 @@ angular.module('myApp.sudoku', [])
       scope: {
         data: '=',
       },
+      controller: function() {
+        let ctrl = this;
+        
+        ctrl.trim = (field, event) => {
+          // we do not accept zero in any form
+          if (event.key === "0") {
+            event.preventDefault();
+            return false;
+          }
+
+          // if we have something, we accept only Backspace or Delete
+          if (field && field.digit) {
+            if (event.key !== "Backspace" && event.key !== "Delete") {
+              event.preventDefault();
+              return false;
+            }
+          }
+        }
+      },
+      controllerAs: 'sudokuCtrl'
     };
   });
   
