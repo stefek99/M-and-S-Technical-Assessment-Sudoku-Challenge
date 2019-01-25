@@ -9,7 +9,7 @@ Code structure based on https://github.com/angular/angular-seed
 
 ### TODO
 * (maybe) Highlighting an area violating contraints?
-* (maybe) enerate a new sudoku
+* (maybe) Generate a new sudoku
 
 How to generate a new sudoku?
 1. Valid udoku must have only one solution
