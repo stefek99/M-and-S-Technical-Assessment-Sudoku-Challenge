@@ -1,20 +1,23 @@
 
-# Quickstart
-Get the code: `git clone` and `npm install`
-Run: `npm start`
-Test: `npm test`
+### Quickstart
+
+* Get the code: `git clone` and `npm install`
+* Run: `npm start`
+* Test: `npm test`
 
 Code structure based on https://github.com/angular/angular-seed
 
-# TODO
+### TODO
 * (maybe) Highlighting an area violating contraints?
-* Generate a new sudoku
+* (maybe) enerate a new sudoku
 
+How to generate a new sudoku?
 1. Valid udoku must have only one solution
 2. How to generate: https://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions
 3. What is backtracking: https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#Backtracking
 4. Realising that for MVP, generating a new sudoku is not in the spec
 
+In case generating a new sudoku was part of the spec - please communicate with me and tell me about it.
 
 -------
 
